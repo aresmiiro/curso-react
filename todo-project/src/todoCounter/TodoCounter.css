@@ -1,0 +1,20 @@
+.TodoCounter {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 45px;
+}
+
+.CounterTitle{
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+   background:linear-gradient(200deg,
+        rgb(64, 224, 208) 20%,
+        rgb(255, 140, 0) 52.56%,
+        rgb(255, 0, 128) 97.33%);
+   -webkit-background-clip: text;
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
