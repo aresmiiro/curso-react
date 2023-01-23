@@ -7,7 +7,6 @@ function useLocalStorage(itemName, initialValue) {
   const [loading, setLoading] = React.useState(true);
   const [item, setItem] = React.useState(initialValue);
   React.useEffect(() =>{
-  setTimeout(() =>{
   try{
       const localStorageItem = localStorage.getItem(itemName); // obtiene el valor del local storage con el nombre que le hemos pasado
   let parsedItem; // variable para guardar el valor del local storage como string en formato json
@@ -27,8 +26,7 @@ function useLocalStorage(itemName, initialValue) {
       setError(error)
 
     }
-  
-  },1000)
+
 
   });
   

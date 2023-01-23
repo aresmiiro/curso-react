@@ -3,9 +3,9 @@ import './CreateTodoButton.css';
 
 function CreateTodoButton(props) {
   const onClickButton = () =>{
-    alert('You added a new task');
+   props.setOpenModal(prevState => !prevState);
 
-  }
+  };
   return (
     <button 
     className="CreateTodoButton"
